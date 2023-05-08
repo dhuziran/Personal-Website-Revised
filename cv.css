@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar-container{
+    width: 95%;
+    margin: auto 0;
+    position: relative;
+    z-index: 100000000;
+} 
+
+header{
+    background: linear-gradient(to left, #2a1e5c, #c4cbca) ;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 150px;
+    padding-top: 50px;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color:#9DB4C0;
+} 
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #9DB4C0;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width:100%
+}
+
+.text-area{
+    background: linear-gradient(to left, #2a1e5c, #c4cbca) ;
+    width: 100%;
+    height: 100vh; 
+}
+
+.page-header{
+    width:100%;
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+h1{
+    margin-top: 8%;
+    font-size: 75px;
+    color:white;
+    box-shadow: 0 0 12px -2px black;
+    padding: 10px;
+}
+
+.resume{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:white;
+}
+
+.resume div{
+    border: 2px solid black;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 500px;
+    height: 800px;
+    border-radius:5%;
+    background: #9DB4C0;
+    box-shadow: 0 0 12px -2px black;
+}
+
+.resume h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.resume li{
+    list-style: circle;
+    list-style-position: inside;
+    margin-left: 10px;
+    font-size: 35px;
+    margin-top: 33%;
+}
