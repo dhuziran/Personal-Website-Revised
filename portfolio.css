@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* ------------------------------------------------------------------------------------------- */
+/* Navigation Bar Code */
 
 #navbar-container{
     width: 95%;
@@ -58,6 +60,10 @@ nav a::before{
 nav a:hover::before{
     width:100%
 }
+
+/* ----------------------------------------------------------------------------------------
+Background and Text area */
+
 
 .text-area{
     background: linear-gradient(to left, #2a1e5c, #c4cbca) ;

@@ -3,6 +3,63 @@
     padding:0;
 }
 
+#navbar-container{
+    width: 95%;
+    margin: auto 0;
+    position: relative;
+    z-index: 100000000;
+} 
+
+header{
+    background: linear-gradient(to left, #2a1e5c, #c4cbca) ;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 8vh;
+    padding-top: 4vh;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color:#9DB4C0;
+} 
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 0.5vh;
+    width: 0%;
+    background-color: #9DB4C0;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width:100%
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
 .text-area{
     width:100%;
     position: absolute; 
@@ -12,16 +69,25 @@
     flex-direction: column;
 }
 
-.text-area h1{
-    margin-top: 10%;
-    color: white;
-    font-size: 75px;
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10000000000000000;
+    color:white;
+    font-size: 3em;
+    margin-top: 30vh;
 }
 
-.text-area h2{
-    color: white;
-    font-size: 50px;
+input{
+    font-size: 3rem;
 }
+
+button{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
 
 /* ------------------------------------------------------------------------------------- */
 /* Background Animation Code */
@@ -128,61 +194,3 @@
         opacity: 0;
     }
 }  
-
-/* ------------------------------------------------------------------------------------------- */
-/* Navigation Bar Code */
-
-#navbar-container{
-    width: 95%;
-    margin: auto 0;
-    position: relative;
-    z-index: 100000000;
-} 
-
-header{
-    background: linear-gradient(to left, #2a1e5c, #c4cbca) ;
-}
-
-nav{
-    float: right;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-
-nav li{
-    display: inline-block;
-    font-size: 30px;
-    margin-left: 150px;
-    padding-top: 50px;
-    position: relative;
-}
-
-nav a{
-    text-decoration: none;
-    color:white;
-    text-transform: uppercase;
-}
-
-nav a:hover{
-    color:#9DB4C0;
-} 
-
-nav a::before{
-    content: '';
-    display: block;
-    height: 0.5vh;
-    width: 0%;
-    background-color: #9DB4C0;
-    position: absolute;
-    top: 0;
-    transition: all ease-in-out 200ms;
-}
-
-nav a:hover::before{
-    width:100%
-}

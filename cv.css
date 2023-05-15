@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* ------------------------------------------------------------------------------------------- */
+/* Navigation Bar Code */
 
 #navbar-container{
     width: 95%;
@@ -59,6 +61,9 @@ nav a:hover::before{
     width:100%
 }
 
+/* ----------------------------------------------------------------------------------------
+Background and Text area */
+
 .text-area{
     background: linear-gradient(to left, #2a1e5c, #c4cbca) ;
     width: 100%;
@@ -91,8 +96,8 @@ h1{
 
 .resume div{
     border: 2px solid black;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 5vh;
+    margin-top: 4vh;
     width: 500px;
     height: 800px;
     border-radius:5%;
